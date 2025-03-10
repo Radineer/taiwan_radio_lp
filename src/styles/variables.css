@@ -1,0 +1,45 @@
+:root {
+  /* カラー */
+  --color-primary: #FF6B3A;
+  --color-primary-dark: #E55A2B;
+  --color-primary-light: #FF8B5F;
+  
+  --color-secondary: #2C3E50;
+  --color-secondary-light: #34495E;
+  
+  --color-accent-red: #D63E3E;
+  --color-accent-green: #27873F;
+  
+  --color-background: #FFFFFF;
+  --color-surface: #F8F8F8;
+  --color-border: #E2E8F0;
+  --color-text: #2C3E50;
+  --color-text-light: #64748B;
+
+  /* タイポグラフィ */
+  --font-primary: 'Noto Sans JP', sans-serif;
+  --font-secondary: 'M PLUS 1p', sans-serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+
+  /* スペーシング */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+
+  /* ブレイクポイント */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+}
