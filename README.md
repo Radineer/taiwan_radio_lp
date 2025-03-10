@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 台湾日本Radio Express オンラインサロン LP
 
-## Getting Started
+日台をつなぐ架け橋となるオンラインサロンのランディングページです。ラジオを通じて日台の文化交流を促進し、コミュニティを形成することを目指しています。
 
-First, run the development server:
+## 🌟 特徴
+
+- **クロスカルチャー**: 日台の文化融合を視覚的に表現
+- **ラジオコンテンツ**: アーカイブや限定コンテンツの提供
+- **コミュニティ**: メンバー同士の交流促進
+- **多様な会員プラン**: スタンダード、プレミアム、法人向けプランを用意
+
+## 🛠 技術スタック
+
+- [Next.js](https://nextjs.org/) - Reactフレームワーク
+- [TypeScript](https://www.typescriptlang.org/) - 型安全な開発
+- [Tailwind CSS](https://tailwindcss.com/) - スタイリング
+- [GitHub Pages](https://pages.github.com/) - ホスティング
+
+## 🚀 開発環境のセットアップ
 
 ```bash
+# リポジトリのクローン
+git clone https://github.com/Radineer/taiwan_radio_lp.git
+cd taiwan_radio_lp
+
+# 依存関係のインストール
+npm install
+
+# 開発サーバーの起動
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ブラウザで [http://localhost:3000](http://localhost:3000) を開いて結果を確認できます。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📝 コンテンツ構成
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **ヒーローセクション**: キャッチーな導入と主要なCTA
+- **サロン概要**: コンセプトとベネフィットの説明
+- **会員プラン**: 各プランの詳細な説明
+- **運営者紹介**: パーソナリティの紹介
+- **FAQ**: よくある質問への回答
 
-## Learn More
+## 🎨 デザインシステム
 
-To learn more about Next.js, take a look at the following resources:
+プロジェクトには包括的なデザインシステムが実装されています：
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **カラーパレット**: 日台を象徴する配色
+- **タイポグラフィ**: 読みやすさを重視したフォント設定
+- **コンポーネント**: 再利用可能なUIパーツ
+- **レスポンシブデザイン**: 各種デバイスに対応
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔄 デプロイ
 
-## Deploy on Vercel
+GitHub Actionsを使用して自動デプロイを設定しています。`main`ブランチにプッシュすると、自動的にGitHub Pagesにデプロイされます。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+デプロイされたサイトは以下のURLで確認できます：
+[https://radineer.github.io/taiwan_radio_lp/](https://radineer.github.io/taiwan_radio_lp/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📦 ビルド
+
+```bash
+# プロダクションビルド
+npm run build
+
+# ビルド結果の確認
+npm run start
+```
+
+## 🤝 コントリビューション
+
+1. このリポジトリをフォーク
+2. 新しいブランチを作成 (`git checkout -b feature/amazing-feature`)
+3. 変更をコミット (`git commit -m 'Add some amazing feature'`)
+4. ブランチにプッシュ (`git push origin feature/amazing-feature`)
+5. プルリクエストを作成
+
+## 📄 ライセンス
+
+このプロジェクトはMITライセンスの下で公開されています。
+
+## �� 運営
+
+株式会社Radineer
