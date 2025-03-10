@@ -1,11 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  ...(process.env.NODE_ENV === 'production' ? {
+    output: 'export',
+    basePath: '/taiwan_radio_lp',
+    assetPrefix: '/taiwan_radio_lp/',
+  } : {}),
   images: {
     unoptimized: true,
   },
-  basePath: '/taiwan_radio_lp',
-  assetPrefix: '/taiwan_radio_lp/',
   trailingSlash: true,
 }
 
