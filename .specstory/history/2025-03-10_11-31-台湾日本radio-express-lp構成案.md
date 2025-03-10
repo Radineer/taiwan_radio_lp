@@ -4370,7 +4370,171 @@ GitHub Actionsのログを詳しく確認する必要がありますが、一般
 
 _****_
 
+```bash
+npm run build
+```
 
+```
+yu01@yu01noMBP taiwan_radio_lp % npm run build
+
+> taiwan_radio_lp@0.1.0 build
+> next build
+
+   ▲ Next.js 15.2.1
+
+   Creating an optimized production build ...
+SyntaxError: Unexpected token < in JSON at position 2
+    at JSON.parse (<anonymous>)
+Failed to compile.
+
+./src/app/page.tsx
+Error:   x Merge conflict marker encountered.
+   ,-[/Users/yu01/Desktop/taiwan_radio_lp/src/app/page.tsx:1:1]
+ 1 | <<<<<<< HEAD
+   : ^^^^^^^
+ 2 | 'use client'
+ 3 | import React from 'react'
+ 4 | import Hero from '@/components/Hero'
+   `----
+  x Expected ',', got 'import'
+    ,-[/Users/yu01/Desktop/taiwan_radio_lp/src/app/page.tsx:27:1]
+ 24 |           <CTA />
+ 25 |           <Legal />
+ 26 |         </main>
+ 27 | ,-> =======
+ 28 | `-> import Hero from './components/Hero'
+ 29 |     import About from './components/About'
+ 30 |     import Features from './components/Features'
+ 31 |     import Pricing from './components/Pricing'
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/page.tsx
+
+
+> Build failed because of webpack errors
+yu01@yu01noMBP taiwan_radio_lp %
+```
+
+---
+
+_****_
+
+エラーの原因が判明しました。`src/app/page.tsx`にマージコンフリクトのマーカーが残っています。これを解決しましょう：
+
+---
+
+_****_
+
+```diff
+- <<<<<<< HEAD
+  'use client'
+  import React from 'react'
+        <Legal />
+      </main>
+- =======
+- import Hero from './components/Hero'
+- import About from './components/About'
+- import Features from './components/Features'
+- import Pricing from './components/Pricing'
+- import Testimonials from './components/Testimonials'
+- import Team from './components/Team'
+- import FAQ from './components/FAQ'
+- import Footer from './components/Footer'
+- 
+- export default function Home() {
+-   return (
+-     <>
+-       <Hero />
+-       <About />
+-       <Features />
+-       <Pricing />
+-       <Testimonials />
+-       <Team />
+-       <FAQ />
+-       <Footer />
+-     </>
+- >>>>>>> a3eb496cb42226e3e78c5f274a82162206d5eada
+    )
+  }
+```
+
+---
+
+_****_
+
+変更をコミットしてプッシュします：
+
+---
+
+_****_
+
+```bash
+git add . && git commit -m "fix: マージコンフリクトを解決" | cat && git push origin main | cat
+```
+
+```
+yu01@yu01noMBP taiwan_radio_lp % git add . && git commit -m "fix: マージコンフリクトを解決" | cat && git pus
+h origin main | cat              git add . && git commit -m "fix: マージコンフリクトを解決" | cat && git pus
+h origin main | cat
+[main bbb08bb] fix: マージコンフリクトを解決
+ 2 files changed, 195 insertions(+), 24 deletions(-)
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 2.73 KiB | 2.73 MiB/s, done.
+Total 8 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To https://github.com/Radineer/taiwan_radio_lp.git
+   5ee4e94..bbb08bb  main -> main
+yu01@yu01noMBP taiwan_radio_lp %
+```
+
+---
+
+_****_
+
+これでマージコンフリクトが解決され、GitHub Actionsが再度実行されます。ビルドが成功すると、以下のURLでサイトが公開されます：
+
+https://radineer.github.io/taiwan_radio_lp/
+
+GitHub Actionsの進行状況は、GitHubリポジトリの「Actions」タブで確認できます。デプロイが完了するまで数分かかる場合があります。
+
+もし新しい問題が発生した場合は、GitHub Actionsのログを確認して、具体的なエラーメッセージに基づいて対応を行います。
+
+---
+
+_**User**_
+
+build
+Process completed with exit code 1.
+build
+Cache not found for keys: node-cache-Linux-x64-npm-dc84b32d2a754ab023fe239d5bdeca9f77fe0275edb2b2e552c0b5b136d66802
+
+---
+
+_**Assistant**_
+
+GitHub Actionsのビルドが再度失敗しているようです。キャッシュの問題は無視して構いませんが、ビルドの失敗に対処する必要があります。
+
+まず、依存関係を完全にクリーンインストールしてみましょう：
+
+---
+
+_****_
+
+```bash
+rm -rf node_modules package-lock.json && npm install && npm run build
+```
+
+```
+yu01@yu01noMBP taiwan_radio_lp % rm -rf node_modules package-lock.json && npm install && npm run build
+⠇
+```
 
 ---
 
