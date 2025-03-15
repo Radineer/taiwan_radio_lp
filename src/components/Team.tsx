@@ -6,13 +6,13 @@ export default function Team() {
       name: '和田健一郎',
       role: 'メインパーソナリティ',
       description: '台湾日本Radio Expressのメインパーソナリティ。日台交流に情熱を注ぎ、現地の最前線から魅力を発信。SNS総フォロワー数多数。イベント出演多数。ファンとの近い距離感が人気の秘訣。',
-      image: '/images/wada.jpg'
+      image: '/taiwan_radio_lp/images/wada.jpg'
     },
     {
       name: '吉村剛史',
       role: '共同パーソナリティ',
       description: '共同パーソナリティ。日台をはじめ国際的な視点を持ち、深いトークが持ち味。取材経験豊富でバラエティにも精通。番組進行でも定評がある。',
-      image: '/images/yoshimura.jpg'
+      image: '/taiwan_radio_lp/images/yoshimura.jpg'
     }
   ]
 
@@ -41,6 +41,7 @@ export default function Team() {
                   fill
                   className="object-cover rounded-full"
                   sizes="(max-width: 768px) 100vw, 192px"
+                  priority
                 />
               </div>
               <div className="text-center">

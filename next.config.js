@@ -6,7 +6,9 @@ const nextConfig = {
   basePath: '/taiwan_radio_lp',
   images: {
     unoptimized: true,
+    path: '/taiwan_radio_lp/_next/image'
   },
+  assetPrefix: '/taiwan_radio_lp/',
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
