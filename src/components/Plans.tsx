@@ -100,7 +100,7 @@ export default function Plans() {
         </div>
 
         <div className="mt-12 text-center text-gray-600">
-          <p>※ 価格は全て税抜表示です</p>
+          <p>※ 価格は全て税込表示です</p>
         </div>
       </div>
     </section>

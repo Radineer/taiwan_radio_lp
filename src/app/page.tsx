@@ -9,6 +9,7 @@ import Team from '../components/Team'
 import FAQ from '../components/FAQ'
 import CTA from '../components/CTA'
 import Legal from '../components/Legal'
+import Activities from '../components/Activities'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <About />
       <Features />
+      <Activities />
       <Plans />
       <Testimonials />
       <Team />

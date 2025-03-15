@@ -32,17 +32,18 @@ export default function Team() {
           {members.map((member, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-lg overflow-hidden"
+              className="bg-white rounded-lg shadow-lg overflow-hidden p-8 flex flex-col items-center"
             >
-              <div className="relative h-80 w-full">
+              <div className="relative w-48 h-48 mb-6">
                 <Image
                   src={member.image}
                   alt={member.name}
                   fill
-                  className="object-cover"
+                  className="object-cover rounded-full"
+                  sizes="(max-width: 768px) 100vw, 192px"
                 />
               </div>
-              <div className="p-8">
+              <div className="text-center">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
                   {member.name}
                 </h3>
