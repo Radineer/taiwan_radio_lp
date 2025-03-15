@@ -2,6 +2,8 @@
 const path = require('path')
 
 const nextConfig = {
+  output: 'export',
+  basePath: '/taiwan_radio_lp',
   images: {
     unoptimized: true,
   },
