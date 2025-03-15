@@ -6,7 +6,8 @@ const nextConfig = {
   basePath: '/taiwan_radio_lp',
   images: {
     unoptimized: true,
-    path: '/taiwan_radio_lp/_next/image'
+    loader: 'custom',
+    loaderFile: './image-loader.js'
   },
   assetPrefix: '/taiwan_radio_lp/',
   webpack: (config) => {

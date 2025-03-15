@@ -1,9 +1,21 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-center justify-center bg-gray-50">
-      <div className="container mx-auto px-4 text-center">
+    <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-800">
+      <div className="absolute inset-0 opacity-30">
+        <Image
+          src="/images/hero-bg.jpg"
+          alt="台湾と日本の街並み"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+      </div>
+      
+      <div className="relative z-10 section-container text-center text-white">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
           日台をつなぐ架け橋へ
           <span className="block text-2xl md:text-4xl mt-4">
