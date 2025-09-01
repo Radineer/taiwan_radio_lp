@@ -5,27 +5,27 @@ export default function Activities() {
     {
       title: 'ラジオ収録',
       description: '毎週、台湾の最新情報や文化について楽しく語り合っています。ゲストを招いて特別な話題も。',
-      image: '/taiwan_radio_lp/images/active1.jpg'
+      image: '/images/active1.jpg'
     },
     {
       title: '現地取材',
       description: '台湾各地を訪れ、魅力的なスポットや人々との出会いを取材。生の声をお届けします。',
-      image: '/taiwan_radio_lp/images/active2.jpg'
+      image: '/images/active2.jpg'
     },
     {
       title: 'イベント開催',
       description: 'リスナーの皆様との交流イベントや、台湾文化を体験できるワークショップを定期的に開催。',
-      image: '/taiwan_radio_lp/images/active3.jpg'
+      image: '/images/active3.jpg'
     },
     {
       title: 'コミュニティ交流',
       description: '日台のメンバーが自由に交流し、情報交換や文化理解を深めています。オンライン・オフライン問わず活発に活動中。',
-      image: '/taiwan_radio_lp/images/active4.jpg'
+      image: '/images/active4.jpg'
     },
     {
       title: '文化体験',
       description: '台湾の伝統文化や最新トレンドを体験できるワークショップやツアーを企画。より深い相互理解を目指しています。',
-      image: '/taiwan_radio_lp/images/active5.jpg'
+      image: '/images/active5.jpg'
     }
   ]
 

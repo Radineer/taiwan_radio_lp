@@ -2,6 +2,7 @@
 import React from 'react'
 import Hero from '../components/Hero'
 import About from '../components/About'
+import Achievements from '../components/Achievements'
 import Features from '../components/Features'
 import Plans from '../components/Plans'
 import Testimonials from '../components/Testimonials'
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <About />
       <Features />
+      <Achievements />
       <Activities />
       <Plans />
       <Testimonials />

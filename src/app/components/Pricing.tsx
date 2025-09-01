@@ -6,7 +6,7 @@ export default function Pricing() {
       name: 'スタンダード会員',
       price: '500',
       features: [
-        'ラジオアーカイブコンテンツ配布'
+        '過去に放送した番組のアーカイブコンテンツが聴き放題。聞き逃しも安心。'
       ],
       buttonText: '今すぐ登録する',
       buttonLink: 'https://buy.stripe.com/eVa9BY2hagnXeQgeUV',
@@ -16,9 +16,7 @@ export default function Pricing() {
       name: 'プレミアム会員',
       price: '5,000',
       features: [
-        'ラジオアーカイブコンテンツ配布',
-        '特別コンテンツの配布やイベントへの招待',
-        'クレジット(名前)の掲載'
+        '地上波番組では放送できなかったマル秘トークゲスト対談など、ここでしか聴けない濃密エピソードコンテンツ。吉村さんとの食事会などリアルイベントやオンライン企画の優先参加も！会員専用SNSグループでリアルタイムに情報交換。旅行プランやおすすめスポット紹介。番組では紹介できなかった半導体をはじめとしたテック情報、ここから新たなビジネスやコラボが生まれる可能性も！大手メディアでは実現できない番組出演者との身近な交流が可能です！'
       ],
       buttonText: '今すぐ登録する',
       buttonLink: 'https://buy.stripe.com/5kA5lIaNGgnX9vW8ww',
@@ -28,10 +26,7 @@ export default function Pricing() {
       name: '法人会員',
       price: '50,000',
       features: [
-        'ラジオアーカイブコンテンツ配布',
-        '特別コンテンツの配布やイベントへの招待',
-        'クレジット(企業名)の掲載',
-        '要望に応じたタイアップ企画やコラボ可能'
+        '法人会員は企業名をクレジット掲載、PR効果も！日台関連ビジネスとのコラボや協賛イベントも検討可能'
       ],
       buttonText: 'お問い合わせはこちら',
       buttonLink: 'https://radineer.asia/contact',
