@@ -16,6 +16,14 @@ export default function Hero() {
       </div>
       
       <div className="relative z-10 section-container text-center text-white">
+        <div className="mb-6">
+          <p className="text-base sm:text-lg md:text-xl font-semibold">
+            ラジオ番組台湾日本Radio Express 友の会―番組運営の応援をお願いします！
+          </p>
+          <p className="text-sm sm:text-base">
+            毎週月JST２０時より国際ラジオ放送株式会社（ラジオ成田）FM８３，７MHｚにて放送中！
+          </p>
+        </div>
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
           日台をつなぐ架け橋へ
           <span className="block text-2xl md:text-4xl mt-4">
