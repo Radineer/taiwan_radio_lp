@@ -1,15 +1,10 @@
 /** @type {import('next').NextConfig} */
 const path = require('path')
 
+const isGhPages = process.env.GITHUB_PAGES === 'true'
+
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  basePath: '/taiwan_radio_lp',
-  images: {
-    unoptimized: true,
-    loader: 'custom',
-    loaderFile: './image-loader.js'
-  },
-  assetPrefix: '/taiwan_radio_lp/',
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
@@ -19,4 +14,15 @@ const nextConfig = {
   }
 }
 
-module.exports = nextConfig 
+if (isGhPages) {
+  nextConfig.output = 'export'
+  nextConfig.basePath = '/taiwan_radio_lp'
+  nextConfig.assetPrefix = '/taiwan_radio_lp/'
+  nextConfig.images = {
+    unoptimized: true,
+    loader: 'custom',
+    loaderFile: './image-loader.js'
+  }
+}
+
+module.exports = nextConfig
