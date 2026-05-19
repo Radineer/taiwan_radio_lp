@@ -36,7 +36,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://radineer.asia/%e7%89%b9%e5%ae%9a%e5%95%86%e5%8f%96%e5%bc%95%e6%b3%95%e3%81%ab%e5%9f%ba%e3%81%a5%e3%81%8f%e8%a1%a8%e8%a8%98/" className="text-gray-400 hover:text-white transition-colors">
+                  <Link href="https://radineer.asia/legal/tokushoho" className="text-gray-400 hover:text-white transition-colors">
                     特定商取引法に基づく表記
                   </Link>
                 </li>
