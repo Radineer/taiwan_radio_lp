@@ -49,7 +49,7 @@ export default function Activities() {
             >
               <div className="relative h-64 w-full">
                 <Image
-                  src={activity.image}
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${activity.image}`}
                   alt={activity.title}
                   fill
                   className="object-cover"

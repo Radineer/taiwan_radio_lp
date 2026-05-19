@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-800">
       <div className="absolute inset-0 opacity-30">
         <Image
-          src="/images/hero-bg.jpg"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/hero-bg.jpg`}
           alt="台湾と日本の街並み"
           fill
           className="object-cover"

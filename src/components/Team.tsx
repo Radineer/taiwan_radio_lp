@@ -36,7 +36,7 @@ export default function Team() {
             >
               <div className="relative w-48 h-48 mb-6">
                 <Image
-                  src={member.image}
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${member.image}`}
                   alt={member.name}
                   fill
                   className="object-cover rounded-full"

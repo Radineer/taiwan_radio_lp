@@ -18,6 +18,7 @@ if (isGhPages) {
   nextConfig.output = 'export'
   nextConfig.basePath = '/taiwan_radio_lp'
   nextConfig.assetPrefix = '/taiwan_radio_lp/'
+  nextConfig.env = { NEXT_PUBLIC_BASE_PATH: '/taiwan_radio_lp' }
   nextConfig.images = {
     unoptimized: true,
     loader: 'custom',
